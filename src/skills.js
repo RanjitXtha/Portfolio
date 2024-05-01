@@ -15,18 +15,19 @@ import illustrator from './Images/illustrator.svg';
 import unity from './Images/unity.svg';
 
 
-import { useEffect,useRef} from 'react';
+import { useState , useEffect,useRef} from 'react';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(ScrollTrigger);
 const Skills = ()=>{
-    const parallaxRef = useRef(null);
-    const parallaxRef2 = useRef(null);
     const card1 = useRef(null);
-    const card2 = useRef(null);
-    const card3 = useRef(null);
-
+      const card2 = useRef(null);
+      const card3 = useRef(null);
+      const [isResizing, setIsResizing] = useState(false); // State to track if resizing is in progress
+      let resizeTimeout;
+   
     const cardStart = {
       opacity:0,
       y:-40,
@@ -37,45 +38,52 @@ const Skills = ()=>{
       y:0,
     };
 
+    const parallaxRef = useRef(null);
+    const parallaxRef2 = useRef(null);
+
+
+
     useEffect(() => {
-      gsap.to(parallaxRef.current, {
-        xPercent:30, 
+      const t2 = gsap.timeline({
         scrollTrigger: {
-          trigger: '.tech-stack', 
-          scrub: 1, 
-          start: 'top bottom', 
-          end: 'bottom top',
-        },
+          trigger: ".tech-stack",
+          scrub: 1,
+          start: "top bottom",
+          end: "bottom top"
+        }
       });
 
-      gsap.to(parallaxRef2.current, {
-        xPercent:-30,
-        scrollTrigger:{
-          trigger:'.tech-stack',
-          scrub:1,
-          start:'40% bottom',
-          end:'bottom top',
-        }
-      })
+      t2.fromTo(parallaxRef.current,{xPercent:-30}, {
+        xPercent: 30,
+      });
+  
+      t2.fromTo(parallaxRef2.current, {xPercent:30},{
+        xPercent: -30,
+      },"<");
+    }, []);
 
+
+    useEffect(()=>{
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: '.cards', 
           start: 'top bottom',
           end: 'bottom top',
+          invalidateOnRefresh:true
         },
       });
 
       tl.fromTo(card1.current, cardStart, cardEnd) 
       .fromTo(card2.current, cardStart, cardEnd, '+=0.1') 
       .fromTo(card3.current, cardStart, cardEnd, '+=0.2');
-    }, []); 
+    },[]);
+
 
     return(
         <div>
         <section className='tech-stack'>
           <h1>Tech Stack I Use</h1>
-          <div className='tech-stack-icons' style={{transform:'translateX(-30%)'}} ref={parallaxRef}>
+          <div className='tech-stack-icons' style={{transform:'translate(-20rem)'}} ref={parallaxRef}>
             <span className='level'>
               <p>Level</p>
               <p>Intermediate</p>
@@ -87,7 +95,7 @@ const Skills = ()=>{
           </div>
           
             
-          <div className='tech-stack-icons' style={{marginTop:'10rem',transform:'translateX(30%)'}} ref={parallaxRef2}>
+          <div className='tech-stack-icons' style={{marginTop:'10rem',transform:'translate(20rem)'}} ref={parallaxRef2}>
             
             <div><img src={node} alt="node"/></div>
             <div><img src={express} alt="express"/></div>

@@ -67,7 +67,7 @@ const Home = ()=>{
             <div className='buttons'>
              
               <button className="round-button">
-                <span>Download CV </span>
+               <a href="/Files/Ranjit-CV.pdf" download="Ranjit-CV.pdf"> <button> Download CV</button> </a>
                 <div className="eff"></div>
               </button>
               <div><img src={portfolio}/></div>

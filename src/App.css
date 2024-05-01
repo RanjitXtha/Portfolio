@@ -335,7 +335,8 @@ h1{
     margin-bottom:10rem;
     border-radius: 3.7rem;
     border-top-left-radius:0px ;
-    padding:5rem 3vw;
+    padding:5rem 5rem;
+    padding-right:10rem;
     flex-shrink: 0;
     background-color: var(--bgcolor);
   }
@@ -392,15 +393,18 @@ h1{
   @media(max-width:768px){
     .project{
         grid-template-columns: none; 
+        width: 100vw;
       }
 
       .project-left > div{
         width:80vw;
       }
+  }
 
-      .project{
-        width: 100vw;
-      }
+  @media(max-width:348px){
+    .project-screen{
+        height:50vh;
+    }
   }
 
   .project-left , .project-right{
@@ -440,7 +444,9 @@ h1{
 
 
 
-.round-button > span{
+.round-button  button{
+    background-color: transparent;
+    border: none;
    position: absolute;
    top:30%;
    left:0px;
@@ -450,7 +456,7 @@ h1{
    
 }
 
-.round-button:hover > span{
+.round-button:hover  button{
 color:white;
 }
 
@@ -548,13 +554,27 @@ color:white;
 }
 
 
-.tech-stack{
+.tech-stack ,.container{
     background-color: var(--bgcolor);
     padding:0rem 5rem 5rem 5rem ;
     border-radius: 3.7rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
+}
+
+.tech-stack-icons , .box{
+    display:flex;
+    justify-content: space-evenly;
+    width:100%;
+    transition: all 0.25s ease;
+}
+
+.tech-stack-icons > div , .box>div {
+    max-width: 7vw;
+    max-height: 7vw;
+    
 }
 
 .tech-stack > h1{
@@ -588,19 +608,7 @@ color:white;
 }
 
 
-.tech-stack-icons{
-    display:flex;
-    justify-content: space-evenly;
-    width:100%;
-    transform: translateX(-10rem); 
-    transition: all 0.25s ease;
-}
 
-.tech-stack-icons > div{
-    max-width: 7vw;
-    max-height: 7vw;
-    
-}
 .level p{
     margin:0;
 }
