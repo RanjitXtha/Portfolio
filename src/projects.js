@@ -17,7 +17,7 @@ const Project = () =>{
    
     const horizontalSection = fixedDivRef.current;
     const viewportWidth = window.innerWidth;
-    if(viewportWidth>=768){
+    
       
       const scrollTrigger = ScrollTrigger.create({
         trigger: fixedDivRef.current,
@@ -26,6 +26,7 @@ const Project = () =>{
         pin: true,
         scrub: 1,
         anticipatePin: 1,
+        invalidateOnRefresh:true,
         onUpdate: (self) => {
           const scrollPosition = self.progress * (horizontalSection.scrollWidth - window.innerWidth);
           horizontalSection.scrollLeft = scrollPosition;
@@ -68,7 +69,7 @@ const Project = () =>{
       return () => {
         scrollTrigger.kill(); 
       };
-    }
+    
     
   }, []);
 

@@ -322,15 +322,13 @@ h1{
     height:100vh;
     border-radius: 3.7rem;
     border-top-left-radius:0px ;
-    padding:0rem 5rem;
     background-color: var(--bgcolor);
     column-gap: 5rem;
-
   }
+  
   .project{
     display:grid;
-    column-gap: 15vw;
-    width: 150vw;
+    width: 100vw;
     grid-template-columns: 1.8fr 1fr;
     margin-bottom:10rem;
     border-radius: 3.7rem;
@@ -399,12 +397,8 @@ h1{
       .project-left > div{
         width:80vw;
       }
-  }
 
-  @media(max-width:348px){
-    .project-screen{
-        height:50vh;
-    }
+      
   }
 
   .project-left , .project-right{
