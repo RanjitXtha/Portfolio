@@ -6,11 +6,12 @@ import ScrollToPlugin from 'gsap/ScrollToPlugin';
 
 gsap.registerPlugin(ScrollToPlugin);
 const Header = ()=>{
+  const headerButtonRef = useRef(null);
+  const headerButton = useRef(null);
     const [istop , setistop] = useState('false');
   
     const [isClicked , setClicked]=useState(null);
-    const headerButtonRef = useRef(null);
-    const headerButton = useRef(null);
+
     
     useEffect(()=>{
       setClicked(false);
