@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.6022c98f.css",
-    "main.js": "/Portfolio/static/js/main.75122079.js",
+    "main.css": "/Portfolio/static/css/main.93ff26ff.css",
+    "main.js": "/Portfolio/static/js/main.bf7aae8a.js",
     "static/js/453.235e154e.chunk.js": "/Portfolio/static/js/453.235e154e.chunk.js",
     "static/media/project3.png": "/Portfolio/static/media/project3.1401d68e027fbe3ea1ba.png",
     "static/media/insta3.png": "/Portfolio/static/media/insta3.2ae90520297183277011.png",
@@ -20,17 +20,19 @@
     "static/media/node.svg": "/Portfolio/static/media/node.01defc693b98adf7afa0f02417db9811.svg",
     "static/media/mongodb.svg": "/Portfolio/static/media/mongodb.ad7076a60816aa615577fa470cfa6d81.svg",
     "static/media/javascript.svg": "/Portfolio/static/media/javascript.0866c81b3b841c647e23b8a5d991c312.svg",
+    "static/media/firebase.svg": "/Portfolio/static/media/firebase.8f69a13150a1594d8fb73df74f12b548.svg",
     "static/media/photoshop.svg": "/Portfolio/static/media/photoshop.c6a9f6c2ffcd26e6fc856953038fc76e.svg",
     "static/media/html.svg": "/Portfolio/static/media/html.e248da514edac2a2a66bde8fa0166701.svg",
     "static/media/css.svg": "/Portfolio/static/media/css.62dd7a7609a4f5253941ee34c348b64e.svg",
     "static/media/unity.svg": "/Portfolio/static/media/unity.ece346cb85bcd0fca2b50596e3f3ade0.svg",
     "index.html": "/Portfolio/index.html",
-    "main.6022c98f.css.map": "/Portfolio/static/css/main.6022c98f.css.map",
-    "main.75122079.js.map": "/Portfolio/static/js/main.75122079.js.map",
+    "static/media/tailwind.svg": "/Portfolio/static/media/tailwind.973c73e85d4daa24b257ba20298716c4.svg",
+    "main.93ff26ff.css.map": "/Portfolio/static/css/main.93ff26ff.css.map",
+    "main.bf7aae8a.js.map": "/Portfolio/static/js/main.bf7aae8a.js.map",
     "453.235e154e.chunk.js.map": "/Portfolio/static/js/453.235e154e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6022c98f.css",
-    "static/js/main.75122079.js"
+    "static/css/main.93ff26ff.css",
+    "static/js/main.bf7aae8a.js"
   ]
 }
