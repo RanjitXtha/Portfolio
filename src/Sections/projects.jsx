@@ -1,6 +1,6 @@
-import project1 from './Images/project1.png';
-import project2 from './Images/project2.png';
-import project3 from './Images/project3.png';
+import project1 from '../Images/project1.png';
+import project2 from '../Images/project2.png';
+import project3 from '../Images/project3.png';
 
 import { useEffect,useRef} from 'react';
 import { gsap } from "gsap";
@@ -28,7 +28,7 @@ const Project = () =>{
         anticipatePin: 1,
         invalidateOnRefresh:true,
         onUpdate: (self) => {
-          const scrollPosition = self.progress * (horizontalSection.scrollWidth - window.innerWidth);
+          const scrollPosition = self.progress * (horizontalSection.scrollWidth - window.innerWidth+100);
           horizontalSection.scrollLeft = scrollPosition;
         },
   
@@ -86,7 +86,7 @@ const Project = () =>{
                   <div className='project-right'>
                       <h1>Ecommerce Clothing Shop</h1>
                       <button className='round-button'>
-                        <span>Download</span>
+                        <a><button> View</button></a>
                         <div className='eff'></div>
                       </button>
                   </div>
@@ -99,7 +99,7 @@ const Project = () =>{
                   <div className='project-right'>
                       <h1>Gaming Computer Shop</h1>
                       <button className='round-button'>
-                        <span>Download</span>
+                      <a><button> View</button></a>
                         <div className='eff'></div>
                       </button>
                   </div>
@@ -112,7 +112,7 @@ const Project = () =>{
                   <div className='project-right'>
                       <h1>Food Blog Site</h1>
                       <button className='round-button'>
-                        <span>Download</span>
+                      <a><button> View</button></a>
                         <div className='eff'></div>
                       </button>
                   </div>

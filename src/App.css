@@ -102,7 +102,9 @@ header >div::after {
 }
 
 
-
+.header-navs{
+    cursor:pointer;
+}
 
 
 
@@ -319,7 +321,7 @@ h1{
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
-    height:100vh;
+    padding:3rem;
     border-radius: 3.7rem;
     border-top-left-radius:0px ;
     background-color: var(--bgcolor);
@@ -327,21 +329,21 @@ h1{
   }
   
   .project{
-    display:grid;
-    width: 100vw;
-    grid-template-columns: 1.8fr 1fr;
+    display:flex;
+    width: 100%;
+    gap:5rem;
+    justify-content: space-between;
     margin-bottom:10rem;
     border-radius: 3.7rem;
     border-top-left-radius:0px ;
-    padding:5rem 5rem;
-    padding-right:10rem;
+    padding:4rem 4rem;
     flex-shrink: 0;
     background-color: var(--bgcolor);
   }
 
   @media(min-width:1200px){
     .project{
-        width: 100vw;
+        width: 100%;
     }
   }
 
@@ -378,8 +380,8 @@ h1{
   }
 
   .project-left > div{
-    width:80vw;
-    height:50vw;
+    width:95rem;
+    height:55rem;
     max-width: 100rem;
     max-height: 60rem;
     background-color: green;
@@ -390,12 +392,12 @@ h1{
 
   @media(max-width:768px){
     .project{
-        grid-template-columns: none; 
-        width: 100vw;
+        flex-direction: column; 
+        width: 100%;
       }
 
       .project-left > div{
-        width:80vw;
+        width:100%;
       }
 
       

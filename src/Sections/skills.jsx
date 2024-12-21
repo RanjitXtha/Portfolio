@@ -3,16 +3,18 @@ import { LiaGamepadSolid } from "react-icons/lia";
 import { BsPencilSquare } from "react-icons/bs";
 
 
-import html from './Images/html.svg';
-import css from './Images/css.svg';
-import javascript from './Images/javascript.svg';
-import react from './Images/react.svg';
-import node from './Images/node.svg';
-import express from './Images/express.svg';
-import mongodb from './Images/mongodb.svg';
-import photoshop from './Images/photoshop.svg';
-import illustrator from './Images/illustrator.svg';
-import unity from './Images/unity.svg';
+import html from '../Images/html.svg';
+import css from '../Images/css.svg';
+import javascript from '../Images/javascript.svg';
+import react from '../Images/react.svg';
+import node from '../Images/node.svg';
+import express from '../Images/express.svg';
+import mongodb from '../Images/mongodb.svg';
+import photoshop from '../Images/photoshop.svg';
+import illustrator from '../Images/illustrator.svg';
+import unity from '../Images/unity.svg';
+import tailwind from '../Images/tailwind.svg'
+import firebase from '../Images/firebase.svg'
 
 
 import { useState , useEffect,useRef} from 'react';
@@ -25,7 +27,8 @@ const Skills = ()=>{
     const card1 = useRef(null);
       const card2 = useRef(null);
       const card3 = useRef(null);
-      const [isResizing, setIsResizing] = useState(false); // State to track if resizing is in progress
+      const card4 = useRef(null);
+      const [isResizing, setIsResizing] = useState(false); 
       let resizeTimeout;
    
     const cardStart = {
@@ -75,7 +78,8 @@ const Skills = ()=>{
 
       tl.fromTo(card1.current, cardStart, cardEnd) 
       .fromTo(card2.current, cardStart, cardEnd, '+=0.1') 
-      .fromTo(card3.current, cardStart, cardEnd, '+=0.2');
+      .fromTo(card3.current, cardStart, cardEnd, '+=0.2')
+      .fromTo(card4.current, cardStart, cardEnd, '+=0.3');
     },[]);
 
 
@@ -83,6 +87,7 @@ const Skills = ()=>{
         <div>
         <section className='tech-stack'>
           <h1>Tech Stack I Use</h1>
+
           <div className='tech-stack-icons' style={{transform:'translate(-20rem)'}} ref={parallaxRef}>
             <span className='level'>
               <p>Level</p>
@@ -92,6 +97,7 @@ const Skills = ()=>{
             <div><img src={css} alt="css"/></div>
             <div><img src={javascript} alt="js"/></div>
             <div><img src={react} alt="react"/></div>
+            <div><img src={tailwind} alt="tailwind" style={{objectFit:'contain'}} /></div>
           </div>
           
             
@@ -100,6 +106,7 @@ const Skills = ()=>{
             <div><img src={node} alt="node"/></div>
             <div><img src={express} alt="express"/></div>
             <div><img src={mongodb} alt="mongodb"/></div>
+            <div><img src={firebase} alt="firebase"/></div>
             <span className='level'>
               <p>Level:</p>
               <p>Beginner</p>
@@ -121,9 +128,9 @@ const Skills = ()=>{
                   <div className='card-effect'></div>
               </div>
               <div className='tools-used'>
-                  <div><img src={html} alt="html"/></div>
-                  <div><img src={css} alt="css"/></div>
                   <div><img src={javascript} alt="js"/></div>
+                  <div><img src={tailwind} alt="tailwind"/></div>
+                  <div><img src={react} alt="react"/></div>
               </div>
             </div>
 
@@ -153,6 +160,21 @@ const Skills = ()=>{
               </div>
               <div className='tools-used'>
                 <div><img src={unity} alt="unity"/></div>
+              </div>
+            </div>
+
+            <div className='cards' ref={card4}>
+              <div className='card'>
+                <span><LiaGamepadSolid/></span>
+                <h2>Backend Development</h2>
+                <p>I have experience with MERN stack and firebase for backend.</p>
+                <div className='card-effect'></div>
+              </div>
+              <div className='tools-used'>
+                <div><img src={firebase} alt="firebase"/></div>
+                <div><img src={mongodb} alt="mongodb"/></div>
+                <div><img src={node} alt="node"/></div>
+                <div><img src={express} alt="express"/></div>
               </div>
             </div>
           </div>

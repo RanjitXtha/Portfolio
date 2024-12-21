@@ -1,4 +1,4 @@
-import portfolio from './Images/port.png';
+import portfolio from '../Images/port.png';
 import { BsInstagram } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
 

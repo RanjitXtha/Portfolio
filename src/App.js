@@ -1,8 +1,8 @@
 import './App.css';
-import Header from './header';
-import Home from './Home';
-import Skills from './skills';
-import Project from './projects';
+import Header from './Sections/header';
+import Home from './Sections/Home';
+import Skills from './Sections/skills';
+import Project from './Sections/projects';
 import Temp from './temp';
 import { BsInstagram } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
