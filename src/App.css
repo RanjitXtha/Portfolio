@@ -58,6 +58,11 @@ html{
     }
 }
 
+.max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
 header{
     position: fixed;
     top:0px;
@@ -102,10 +107,10 @@ header >div::after {
 }
 
 
-.header-navs{
-    cursor:pointer;
-}
 
+.header-navs a{
+cursor: pointer;
+}
 
 
 
@@ -321,29 +326,31 @@ h1{
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
-    padding:3rem;
+    height:100vh;
     border-radius: 3.7rem;
     border-top-left-radius:0px ;
+    padding:0rem 5rem;
     background-color: var(--bgcolor);
     column-gap: 5rem;
+
   }
-  
   .project{
-    display:flex;
-    width: 100%;
-    gap:5rem;
-    justify-content: space-between;
+    display:grid;
+    column-gap: 15vw;
+    width: 150vw;
+    grid-template-columns: 1.8fr 1fr;
     margin-bottom:10rem;
     border-radius: 3.7rem;
     border-top-left-radius:0px ;
-    padding:4rem 4rem;
+    padding:5rem 5rem;
+    padding-right:10rem;
     flex-shrink: 0;
     background-color: var(--bgcolor);
   }
 
   @media(min-width:1200px){
     .project{
-        width: 100%;
+        width: 100vw;
     }
   }
 
@@ -380,8 +387,8 @@ h1{
   }
 
   .project-left > div{
-    width:95rem;
-    height:55rem;
+    width:80vw;
+    height:50vw;
     max-width: 100rem;
     max-height: 60rem;
     background-color: green;
@@ -392,15 +399,19 @@ h1{
 
   @media(max-width:768px){
     .project{
-        flex-direction: column; 
-        width: 100%;
+        grid-template-columns: none; 
+        width: 100vw;
       }
 
       .project-left > div{
-        width:100%;
+        width:80vw;
       }
+  }
 
-      
+  @media(max-width:348px){
+    .project-screen{
+        height:50vh;
+    }
   }
 
   .project-left , .project-right{

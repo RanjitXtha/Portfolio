@@ -1,7 +1,7 @@
 import portfolio from '../Images/port.png';
 import { BsInstagram } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
-
+import { FaGithub } from "react-icons/fa6";
 
 import { useEffect,useRef} from 'react';
 import { gsap } from "gsap";
@@ -62,7 +62,11 @@ const Home = ()=>{
             <p className="info" ref={secondParagraphRef}>Hi I'm Ranjit Shrestha. I am a passionate Front-end
               Developer based in Kathmandu , Nepal.
             </p>
-            <nav className='icons'><BsFacebook /><BsInstagram /></nav>
+            <nav className='icons'>
+              <a href=""><BsFacebook /></a>
+              <a href="https://www.instagram.com/shrestha.ranjit_/"> <BsInstagram /></a>
+              <a href="https://github.com/RanjitXtha"><FaGithub /></a>
+            </nav>
             
             <div className='buttons'>
              

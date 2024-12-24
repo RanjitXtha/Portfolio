@@ -61,7 +61,7 @@ const Header = ()=>{
   
   
     return(
-      <div>
+      <div className='max-container'>
         <button ref={headerButton} style={istop?{opacity:'0',pointerEvents:'none'}:null} className='menu-button' onClick={()=>clicked()}>
           <TiThMenu style={{fontSize:'4.5rem',color:'white'}}/>
         </button>

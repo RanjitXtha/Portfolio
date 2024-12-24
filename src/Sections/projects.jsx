@@ -1,10 +1,14 @@
 import project1 from '../Images/project1.png';
-import project2 from '../Images/project2.png';
-import project3 from '../Images/project3.png';
+import Portfolio from '../Images/Portfolio.png';
+import MovieApp from '../Images/MovieApp.png';
+import FoodApp from '../Images/FoodApp.png';
+import ChatApp from '../Images/Chatapp.png'
 
 import { useEffect,useRef} from 'react';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ProjectCards from '../Components/ProjectCards';
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -79,49 +83,12 @@ const Project = () =>{
         <section className='my-projects'>
            <h1>Projects</h1>
            <div className='project-screen' ref={fixedDivRef}>
-            <div className="project1 project">
-                  <div className='project-left'>
-                    <div><img src={project1} alt="project1"/></div>
-                  </div>
-                  <div className='project-right'>
-                      <h1>Ecommerce Clothing Shop</h1>
-                      <button className='round-button'>
-                        <a><button> View</button></a>
-                        <div className='eff'></div>
-                      </button>
-                  </div>
-              </div>
-
-              <div className='project'>
-                  <div className='project-left'>
-                    <div><img src={project2} alt="project2"/></div>
-                  </div>
-                  <div className='project-right'>
-                      <h1>Gaming Computer Shop</h1>
-                      <button className='round-button'>
-                      <a><button> View</button></a>
-                        <div className='eff'></div>
-                      </button>
-                  </div>
-              </div>
-
-              <div className='project'>
-                  <div className='project-left'>
-                    <div><img src={project3} alt="project3"/></div>
-                  </div>
-                  <div className='project-right'>
-                      <h1>Food Blog Site</h1>
-                      <button className='round-button'>
-                      <a><button> View</button></a>
-                        <div className='eff'></div>
-                      </button>
-                  </div>
-            </div>
-
-            
+              <ProjectCards image={MovieApp} title={"Movie"} url={"https://movie-frontend-eight.vercel.app/"} />
+              <ProjectCards image={Portfolio} title={"Portfolio Website"} url={"https://ranjitxtha.github.io/Portfolio/"} />
+              <ProjectCards image={FoodApp} title={"Food Recipe Website"} url={"https://ranjitxtha.github.io/TailwindApp/"} />
+              <ProjectCards image={ChatApp} title={"Chat Application using Firebase"} url={"https://ranjitxtha.github.io/Chat-App/"} />
+              <ProjectCards image={project1} title={"E-Commerce Website using Firebase"} url={"https://ranjitxtha.github.io/EcommerceSite/"} />
            </div>
-            
-
         </section>
 
       </div>

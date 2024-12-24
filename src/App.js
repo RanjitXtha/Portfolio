@@ -64,7 +64,7 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="App" >
 { 
   /*
     <div className="custom-cursor" style={{ left:cursorPosition.x, top: cursorPosition.y}}></div>
