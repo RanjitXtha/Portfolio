@@ -84,7 +84,7 @@ const Project = () =>{
         <section className='my-projects'>
            <h1>Projects</h1>
            <div className='project-screen' ref={fixedDivRef}>
-              <ProjectCards image={ecom} title={"Clothing Ecommerce Website(MERN)"} url={"https://ecommerce-project-ochre.vercel.app/"} />
+              <ProjectCards image={ecom} title={"Clothing Ecommerce Website(MERN)"} url={"https://ecommerce-project-git-main-ranjitxthas-projects.vercel.app/"} />
               <ProjectCards image={MovieApp} title={"Movie Website(MERN)"} url={"https://movie-frontend-eight.vercel.app/"} />
               <ProjectCards image={Portfolio} title={"Portfolio Website"} url={"https://ranjitxtha.github.io/Portfolio/"} />
               <ProjectCards image={FoodApp} title={"Food Recipe Website"} url={"https://ranjitxtha.github.io/TailwindApp/"} />
