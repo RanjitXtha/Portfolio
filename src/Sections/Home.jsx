@@ -2,6 +2,7 @@ import portfolio from '../Images/port.png';
 import { BsInstagram } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa6";
+import hero from '../Images/hero.webp'
 
 import { useEffect,useRef} from 'react';
 import { gsap } from "gsap";
@@ -79,7 +80,8 @@ const Home = ()=>{
             
           </div>
 
-          <div className="my-pic" ref={divRef}>
+          <div style={{position:'relative'}} className="my-pic" ref={divRef}>
+            <img src={hero} style={{position:'absolute',scale:'0.5',transform:'translateY(-50px)'}} alt="hero" />
             <div className="effect-1"></div>
           </div>
         </div>
