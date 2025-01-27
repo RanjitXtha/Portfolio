@@ -59,8 +59,8 @@ const Home = ()=>{
         <div>
             <div className="portfolio-top" id="portfolio-top">
           <div className="my-info">
-            <h2 style={{fontWeight:'1000'}} ref={firstParagraphRef}>Front-End React Developer</h2>
-            <p className="info" ref={secondParagraphRef}>Hi I'm Ranjit Shrestha. I am a passionate Front-end
+            <h2 style={{fontWeight:'1000'}} ref={firstParagraphRef}>Full stack React Developer</h2>
+            <p className="info" ref={secondParagraphRef}>Hi I'm Ranjit Shrestha. I am a passionate fullstack
               Developer based in Kathmandu , Nepal.
             </p>
             <nav className='icons'>
