@@ -12,6 +12,8 @@ a{
     margin-top:10rem;
 }
 
+
+
 body{
     background-color:var(--bodycolor);
     color:white;
@@ -29,10 +31,18 @@ p{
 
 
 
+
 html{
     font-size:45.5%;
     
 }
+
+@media (min-width:1380px){
+    html,body{
+      font-size: 65%;
+     
+  }
+  }
 
 @media(max-width:1200px){
     html{
