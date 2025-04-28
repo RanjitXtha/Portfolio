@@ -72,7 +72,7 @@ const Home = ()=>{
             <div className='buttons'>
              
               <button className="round-button">
-               <a href="https://github.com/RanjitXtha/Portfolio/blob/main/public/Files/Ranjit-CV.pdf" download="Ranjit-CV.pdf"> <button> Download CV</button> </a>
+               <a href="https://ranjitxtha.github.io/Portfolio/Files/CV.pdf" download> <button> Download CV</button> </a>
                 <div className="eff"></div>
               </button>
               <div><img src={portfolio}/></div>
