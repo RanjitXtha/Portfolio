@@ -1,6 +1,6 @@
 import portfolio from '../Images/port.png';
 import { BsInstagram } from "react-icons/bs";
-import { BsFacebook } from "react-icons/bs";
+import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import hero from '../Images/hero.webp'
 
@@ -64,7 +64,7 @@ const Home = ()=>{
               Developer based in Kathmandu , Nepal.
             </p>
             <nav className='icons'>
-              <a href=""><BsFacebook /></a>
+              <a href="https://www.linkedin.com/in/ranjit-shrestha-b3a9b2308/"><FaLinkedin  /></a>
               <a href="https://www.instagram.com/shrestha.ranjit_/"> <BsInstagram /></a>
               <a href="https://github.com/RanjitXtha"><FaGithub /></a>
             </nav>
